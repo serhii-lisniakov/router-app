@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/router-app/static/css/main.5f361e03.chunk.css",
-    "main.js": "/router-app/static/js/main.3e861860.chunk.js",
-    "main.js.map": "/router-app/static/js/main.3e861860.chunk.js.map",
+    "main.css": "/router-app/static/css/main.a460badc.chunk.css",
+    "main.js": "/router-app/static/js/main.a2d1c83b.chunk.js",
+    "main.js.map": "/router-app/static/js/main.a2d1c83b.chunk.js.map",
     "runtime-main.js": "/router-app/static/js/runtime-main.7970c8d4.js",
     "runtime-main.js.map": "/router-app/static/js/runtime-main.7970c8d4.js.map",
-    "static/js/2.3bcb3254.chunk.js": "/router-app/static/js/2.3bcb3254.chunk.js",
-    "static/js/2.3bcb3254.chunk.js.map": "/router-app/static/js/2.3bcb3254.chunk.js.map",
+    "static/js/2.abd911a1.chunk.js": "/router-app/static/js/2.abd911a1.chunk.js",
+    "static/js/2.abd911a1.chunk.js.map": "/router-app/static/js/2.abd911a1.chunk.js.map",
     "index.html": "/router-app/index.html",
-    "precache-manifest.d4c0114554d2ec45f58902a6876abc80.js": "/router-app/precache-manifest.d4c0114554d2ec45f58902a6876abc80.js",
+    "precache-manifest.849e61ccf60bd816bc52079ffcbab66b.js": "/router-app/precache-manifest.849e61ccf60bd816bc52079ffcbab66b.js",
     "service-worker.js": "/router-app/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/router-app/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.3bcb3254.chunk.js.LICENSE.txt": "/router-app/static/js/2.3bcb3254.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/router-app/static/media/logo.5d5d9eef.svg"
+    "static/css/main.a460badc.chunk.css.map": "/router-app/static/css/main.a460badc.chunk.css.map",
+    "static/js/2.abd911a1.chunk.js.LICENSE.txt": "/router-app/static/js/2.abd911a1.chunk.js.LICENSE.txt",
+    "static/media/Banner.css": "/router-app/static/media/banner.1dce28cf.jpg",
+    "static/media/check.svg": "/router-app/static/media/check.341c26bf.svg",
+    "static/media/comment.svg": "/router-app/static/media/comment.b88a604f.svg",
+    "static/media/female.svg": "/router-app/static/media/female.e1e32eb5.svg",
+    "static/media/like.svg": "/router-app/static/media/like.710fa199.svg",
+    "static/media/male.svg": "/router-app/static/media/male.adadad59.svg",
+    "static/media/repost.svg": "/router-app/static/media/repost.d061b55f.svg",
+    "static/media/share.svg": "/router-app/static/media/share.2a4c0543.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7970c8d4.js",
-    "static/js/2.3bcb3254.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.3e861860.chunk.js"
+    "static/js/2.abd911a1.chunk.js",
+    "static/css/main.a460badc.chunk.css",
+    "static/js/main.a2d1c83b.chunk.js"
   ]
 }
