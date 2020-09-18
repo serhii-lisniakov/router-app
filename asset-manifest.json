@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/router-app/static/css/main.a460badc.chunk.css",
-    "main.js": "/router-app/static/js/main.a2d1c83b.chunk.js",
-    "main.js.map": "/router-app/static/js/main.a2d1c83b.chunk.js.map",
+    "main.js": "/router-app/static/js/main.6c3cff54.chunk.js",
+    "main.js.map": "/router-app/static/js/main.6c3cff54.chunk.js.map",
     "runtime-main.js": "/router-app/static/js/runtime-main.7970c8d4.js",
     "runtime-main.js.map": "/router-app/static/js/runtime-main.7970c8d4.js.map",
     "static/js/2.abd911a1.chunk.js": "/router-app/static/js/2.abd911a1.chunk.js",
     "static/js/2.abd911a1.chunk.js.map": "/router-app/static/js/2.abd911a1.chunk.js.map",
     "index.html": "/router-app/index.html",
-    "precache-manifest.849e61ccf60bd816bc52079ffcbab66b.js": "/router-app/precache-manifest.849e61ccf60bd816bc52079ffcbab66b.js",
+    "precache-manifest.d1bc564383592109c1aec3fb855fe3a0.js": "/router-app/precache-manifest.d1bc564383592109c1aec3fb855fe3a0.js",
     "service-worker.js": "/router-app/service-worker.js",
     "static/css/main.a460badc.chunk.css.map": "/router-app/static/css/main.a460badc.chunk.css.map",
     "static/js/2.abd911a1.chunk.js.LICENSE.txt": "/router-app/static/js/2.abd911a1.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.7970c8d4.js",
     "static/js/2.abd911a1.chunk.js",
     "static/css/main.a460badc.chunk.css",
-    "static/js/main.a2d1c83b.chunk.js"
+    "static/js/main.6c3cff54.chunk.js"
   ]
 }
