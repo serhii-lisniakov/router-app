@@ -9,8 +9,11 @@ const FullFoto = (props) => {
         <div className="full-foto-wrapper" 
              onClick={(e) => Array.from(e.target.classList).includes("full-foto-wrapper") ? props.history.goBack() : false}
         >
-            <RenderIf condition={foto.path}>
+            <RenderIf condition={foto?.path}>
                 <img className="full-foto" src={foto.path} alt=""/>
+            </RenderIf>
+            <RenderIf condition={!foto?.path}>
+                <div style={{color: 'white'}}>No image.</div>
             </RenderIf>
         </div>
     )

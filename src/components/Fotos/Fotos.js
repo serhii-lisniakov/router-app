@@ -88,7 +88,7 @@ export default class Fotos extends Component {
                 <Route path={`/fotos`} render={() => (
                     <>
                         <div className='fotos-wrapper'>
-                            {this.state.fotos.map((foto, i) => (
+                            {this.state.fotos.map(foto => (
                                 <Link   to={`/fotos/${foto.id}`}
                                         className='foto-wrapper'
                                         style={{backgroundImage: `url(${foto.path})`}}
