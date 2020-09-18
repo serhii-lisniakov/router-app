@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+.page {
+    z-index: 0;
+    height: calc(100vh - 110px);
+    padding: 30px 20px 30px;
+    transition: .5s;
+    overflow: hidden;
+}
+.page::after {
+    position: fixed;
+    z-index: 10;
+    content: '@space-for-people';
+    font-size: 10px;
+    width: calc(100vw + 20px);
+    height: 30px;
+    background: linear-gradient(90deg, rgba(48,83,125,1)  0%, rgba(31,29,30,1) 100%);
+    bottom: 0px;
+    left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-home {
+    background: rgba(4, 51, 38, 0.8);
+}
+.page-posts {
+    background: rgba(65, 34, 37, 0.8);
+}
+.page-fotos {
+    background: rgba(82, 90, 62, 0.8);
+}
+.page-contacts {
+    background: rgba(86, 131, 86, 0.8);
+}
+.page-error {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aa9494;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: monospace;
+}
+.home-text {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(50, 58, 58);
+    font-family: 'Passion One', cursive;
+}

@@ -1,0 +1,56 @@
+.fotos-wrapper {
+    height: calc(100vh - 110px);
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fotos-wrapper::-webkit-scrollbar {
+    width: 0px;
+}
+.foto-wrapper {
+    width: 24.5%;
+    height: 285px;
+    position: relative;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 1px;
+    box-shadow: 0 0 10px 1px #000;
+    transition: .3s;
+}
+.foto-wrapper:hover {
+    box-shadow: 0 0 10px 1px rgb(146, 146, 146);
+    transition: .3s;
+}
+.foto-wrapper:last-child {
+    margin-bottom: 10px;
+}
+.full-foto-wrapper {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+.full-foto {
+    transition: .4s;
+    border-radius: 25px;
+    max-height: 90%;
+    opacity: 0;
+    animation: opac .3s linear forwards;
+    animation-delay: .3s;
+}
+@keyframes opac {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

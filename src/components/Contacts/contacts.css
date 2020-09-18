@@ -1,0 +1,133 @@
+.contacts-wrapper {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(90deg, rgba(31,29,30,1) 0%, rgba(48,83,125,1) 100%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.contacts-conditions {
+    display: flex;
+
+}
+.contacts-conditions label {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.contacts-conditions label img {
+    width: 15px;
+}
+.contacts-search {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    color: rgb(165, 181, 187);
+    opacity: 0.8;
+}
+.contacts-search span {
+    margin-left: auto;
+}
+.contacts-items {
+    height: calc(100vh - 210px);
+    overflow-y: scroll;
+    padding-right: 5px;
+    scrollbar-width: 3px;
+    scrollbar-color: rgb(211, 170, 162) rgb(233, 228, 220);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.contacts-items::-webkit-scrollbar{
+    width: 3px;
+    background: rgb(233, 228, 220);
+}
+.contacts-items::-webkit-scrollbar-thumb {
+    background: rgb(211, 170, 162);
+}
+.contacts-search input[type="text"] {
+    width: 60%;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    color: white;
+}
+.contacts-search input:focus {
+    box-shadow: 0 0 5px  rgba(160, 81, 45, 0.192);
+}
+.contacts-items a {
+    text-decoration: none;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr 100px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.719);
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: rgb(39, 34, 71);
+    margin: 4px 0;
+    cursor: pointer;
+    text-decoration: none;
+    height: 28px;
+}
+.contact:hover {
+    box-shadow: 0 0 3px 0px #000 inset;
+}
+.contact-name {
+    color: rgb(29, 48, 100);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.contact-gender {
+    text-align: right;
+}
+.contacts-count {
+    font-size: 10px;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.full-contact-wrapper {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background: rgba(86, 131, 86);
+    color: white;
+    max-width: 50%;
+    position: relative;
+    transition: .4s;
+    opacity: 0;
+    animation: opac .3s linear forwards;
+}
+@keyframes opac {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.full-contact-wrapper::after {
+    position: absolute;
+    content: 'x';
+    top: -10px;
+    right: -10px;
+    pointer-events: none;
+}
+.full-contact-header {
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.full-contact-gender {
+    margin-left: auto;
+}
+.full-contact-about {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 2;
+}

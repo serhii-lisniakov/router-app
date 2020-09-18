@@ -1,0 +1,9 @@
+.banner {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    background: url(./banner.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 45px;
+    box-shadow: 0 0 10px 1px #000;
+}
