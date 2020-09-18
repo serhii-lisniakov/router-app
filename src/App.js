@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       
-        <Router basename={'/'}>
+        <Router basename={'/router-app'}>
           <Header/>
             <Switch>
                 <Route path="/" exact render={() => <Redirect to="/home"/>}/>
