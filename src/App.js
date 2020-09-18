@@ -12,11 +12,11 @@ function App() {
           <Header/>
             <Switch>
                 <Route path="/" exact component={HomePage}/>
-                <Route path={'/home'} component={HomePage}/>
-                <Route path={'/posts'} component={PostsPage}/>
-                <Route path={'/fotos'} component={FotosPage}/>
-                <Route path={'/contacts'} component={ContactsPage}/>
-                <Route component={() => <ErrorPage />} />
+                <Route path={'/home'} exact component={HomePage}/>
+                <Route path={'/posts'} exact component={PostsPage}/>
+                <Route path={'/fotos'} exact component={FotosPage}/>
+                <Route path={'/contacts'} exact component={ContactsPage}/>
+                <Route exact component={() => <ErrorPage/>} />
             </Switch>
         </Router>
     </>
