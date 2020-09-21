@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe46f98d5f7a4ee2b6125e1a3e732d43",
+    "revision": "d6f4a8721088b272e8b2b2cf976487db",
     "url": "/router-app/index.html"
   },
   {
-    "revision": "24ef2bcadaa2532ff088",
+    "revision": "69bf371ccfe32d4999df",
     "url": "/router-app/static/css/main.5aef652c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/router-app/static/js/2.abd911a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "24ef2bcadaa2532ff088",
-    "url": "/router-app/static/js/main.5cb7c081.chunk.js"
+    "revision": "69bf371ccfe32d4999df",
+    "url": "/router-app/static/js/main.c63e45a8.chunk.js"
   },
   {
     "revision": "a656d0ed212ed90dd53e",
