@@ -10,12 +10,12 @@ function App() {
         <Router basename={'/router-app'}>
           <Header/>
             <Switch>
-                <Route path="/" exact component={() => <Redirect to="/home"/>}/>
-                <Route path={'/home'} component={() => <Page class='page page-home'/>} />
-                <Route path={'/posts'} component={() => <Page class='page page-posts'/>} />
-                <Route path={'/fotos'} component={() => <Page class='page page-fotos'/>} />
-                <Route path={'/contacts'} component={() => <Page class='page page-contacts'/>} />
-                <Route component={() => <Page class='page page-error'/>} />
+                <Route exact path="/" render={() => <Redirect to="/home"/>}/>
+                <Route exact path={'/home'} render={() => <Page class='page page-home'/>} />
+                <Route exact path={'/posts'} render={() => <Page class='page page-posts'/>} />
+                <Route exact path={'/fotos'} render={() => <Page class='page page-fotos'/>} />
+                <Route exact path={'/contacts'} render={() => <Page class='page page-contacts'/>} />
+                <Route render={() => <Page class='page page-error'/>} />
             </Switch>
         </Router>
     </>
