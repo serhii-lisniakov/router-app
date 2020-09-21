@@ -11,10 +11,10 @@ function App() {
           <Header/>
             <Switch>
                 <Route exact path="/" render={() => <Redirect to="/home"/>}/>
-                <Route exact path={'/home'} render={() => <Page class='page page-home'/>} />
-                <Route exact path={'/posts'} render={() => <Page class='page page-posts'/>} />
-                <Route exact path={'/fotos'} render={() => <Page class='page page-fotos'/>} />
-                <Route exact path={'/contacts'} render={() => <Page class='page page-contacts'/>} />
+                <Route path={'/home'} render={() => <Page class='page page-home'/>} />
+                <Route path={'/posts'} render={() => <Page class='page page-posts'/>} />
+                <Route path={'/fotos'} render={() => <Page class='page page-fotos'/>} />
+                <Route path={'/contacts'} render={() => <Page class='page page-contacts'/>} />
                 <Route render={() => <Page class='page page-error'/>} />
             </Switch>
         </Router>
