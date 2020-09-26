@@ -87,6 +87,7 @@ export default class Contacts extends Component {
                     for (let key in contact) {
                         if (contact[key].toString().toLowerCase().indexOf(prevState.search.toLowerCase()) !== -1) return contact
                     }
+                    return null
                 })
             }
         })

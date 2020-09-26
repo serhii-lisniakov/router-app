@@ -15,6 +15,10 @@ function App() {
                 <Route path={'/posts'} render={() => <Page class='page page-posts'/>} />
                 <Route path={'/fotos'} render={() => <Page class='page page-fotos'/>} />
                 <Route path={'/contacts'} render={() => <Page class='page page-contacts'/>} />
+                <Route path={'/users'} render={() => <Page class='page page-users'/>} />
+                <Route path={'/addUser'} render={() => <Page class='page page-addUser'/>} />
+                <Route path={'/tweets'} render={() => <Page class='page page-tweets'/>} />
+                <Route path={'/addTweet'} render={() => <Page class='page page-addTweet'/>} />
                 <Route render={() => <Page class='page page-error'/>} />
             </Switch>
         </Router>

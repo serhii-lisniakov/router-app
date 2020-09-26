@@ -48,3 +48,15 @@
     color: rgb(50, 58, 58);
     font-family: 'Passion One', cursive;
 }
+.page-users {
+    background: #aa949493;
+}
+.page-addUser {
+    background: #5a99998f;
+}
+.page-tweets {
+    background: #717c4093;
+}
+.page-addTweet {
+    background: #634a838f;
+}
