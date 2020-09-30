@@ -25,7 +25,7 @@ const AddUserForm = ({users}) => {
         }
 
         console.log(newUser)
-        axios.post('http://domer.tech:9999/users/', newUser)
+        axios.post('https://domer.tech:9999/users/', newUser)
 
     }
 

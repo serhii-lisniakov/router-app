@@ -27,7 +27,7 @@ const AddTweetForm = ({users, tweets}) => {
         }
 
         console.log(newTweet)
-        axios.post('http://domer.tech:9999/tweets/', newTweet)
+        axios.post('https://domer.tech:9999/tweets/', newTweet)
 
     }
 

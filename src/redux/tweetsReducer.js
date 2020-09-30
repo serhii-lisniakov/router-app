@@ -6,7 +6,7 @@ const initialState = {
 
 export const getTweetsAction = () => {
     return async dispatch => {
-        const tweets = await axios.get('http://domer.tech:9999/tweets/')
+        const tweets = await axios.get('https://domer.tech:9999/tweets/')
         dispatch({
             type: 'GET_TWEETS',
             payload: tweets.data.data
@@ -16,7 +16,7 @@ export const getTweetsAction = () => {
 
 export const postTweetsAction = (tweet) => {
     return async (dispatch, tweet) => {
-        await axios.post('http://domer.tech:9999/tweets/', tweet)
+        await axios.post('https://domer.tech:9999/tweets/', tweet)
         dispatch({
             type: 'POST_TWEET',
             payload: tweet

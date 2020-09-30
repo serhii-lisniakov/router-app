@@ -6,7 +6,7 @@ const initialState = {
 
 export const getUsersAction = () => {
     return async dispatch => {
-        const users = await axios.get('http://domer.tech:9999/users/')
+        const users = await axios.get('https://domer.tech:9999/users/')
         dispatch({
             type: 'GET_USERS',
             payload: users.data.data
@@ -16,7 +16,7 @@ export const getUsersAction = () => {
 
 export const postUsersAction = (user) => {
     return async (dispatch, user) => {
-        await axios.post('http://domer.tech:9999/users/', user)
+        await axios.post('https://domer.tech:9999/users/', user)
         dispatch({
             type: 'POST_USER',
             payload: user
