@@ -1,0 +1,94 @@
+.user {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: calc(33% - 30px);
+    color: rgb(36, 54, 54);
+    text-shadow: 0 0 10px white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.493);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #000;
+    position: relative;
+}
+.user img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 110px);
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+}
+.users-container::-webkit-scrollbar {
+    width: 0px;
+}
+.username {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    font-size: 10px;
+}
+.addUserForm {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+}
+.addUserForm label {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    position: relative;
+}
+.addUserForm input, select, textarea {
+    box-sizing: border-box;
+    flex-grow: 1;
+    background: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    margin-left: 5px;
+    font-size: 16px;
+    width: 100%;
+    min-height: 40px;
+}
+.addUserForm label:nth-child(2)::before {
+    content: '@';
+    position: absolute;
+    top: 47%;
+    left: 14px;
+}
+.addUserForm label:nth-child(3) input{
+    font-size: 10px;
+}
+.addUserForm button{
+    background: rgb(146, 98, 98);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+    min-height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    outline: none;
+}
+.addUserForm button:active {
+    background: rgb(146, 98, 98, 0.5);
+}
+@media (max-width: 768px) {
+    .user {
+        width: calc(50% - 30px);
+    }
+}

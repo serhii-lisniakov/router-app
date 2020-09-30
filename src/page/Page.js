@@ -7,6 +7,10 @@ import Contacts from '../components/Contacts/Contacts'
 import './Page.css'
 import Posts from '../components/Posts/Posts'
 import Fotos from '../components/Fotos/Fotos'
+import Users from '../components/Users/Users'
+import AddUserForm from '../components/Users/addUser'
+import Tweets from '../components/Tweets/Tweets'
+import AddTweetForm from '../components/Tweets/addTweet'
 
 const Page = (props) => {
     return (
@@ -24,6 +28,18 @@ const Page = (props) => {
                 </RenderIf>
                 <RenderIf condition={props.class === 'page page-contacts'}>
                     <Contacts/>
+                </RenderIf>
+                <RenderIf condition={props.class === 'page page-users'}>
+                    <Users/>
+                </RenderIf>
+                <RenderIf condition={props.class === 'page page-addUser'}>
+                    <AddUserForm />
+                </RenderIf>
+                <RenderIf condition={props.class === 'page page-tweets'}>
+                    <Tweets />
+                </RenderIf>
+                <RenderIf condition={props.class === 'page page-addTweet'}>
+                    <AddTweetForm />
                 </RenderIf>
                 <RenderIf condition={props.class === 'page page-error'}>
                     <div>Error 404. Page not found.</div>
