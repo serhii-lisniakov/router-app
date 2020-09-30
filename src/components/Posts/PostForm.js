@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect } from 'react-redux'
-import {createPost} from '../../redux/actionCreators'
+import {createPostAction} from '../../redux/postsReducer'
 
 class PostForm extends React.Component {
     state = {
@@ -27,7 +27,7 @@ class PostForm extends React.Component {
             date: new Date().toLocaleDateString(),
         }
 
-        this.props.createPost(newPost)
+        this.props.createPostAction(newPost)
 
         this.setState({
             text: '',
@@ -57,7 +57,7 @@ class PostForm extends React.Component {
 
 const mapDispatch = { 
 
-        createPost
+        createPostAction
 }
 
 export default connect(null, mapDispatch)(PostForm)

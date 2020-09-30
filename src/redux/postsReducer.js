@@ -47,12 +47,19 @@ const initialState = {
     ],
 }
 
+// action 
+export function createPostAction(post) {
+    return {
+        type: 'CREATE_POST',
+        payload: post
+    }
+}
+
 export const postsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'CREATE_POST':
             return { 
-                ...state, 
-                // posts: state.posts.concat([action.payload])
+                ...state,
                 posts: [action.payload, ...state.posts]
             }
         default: return state
