@@ -1,7 +1,7 @@
-import React, { useState, useDispatch, useEffect } from 'react'
+import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import axios from 'axios'
 import './Tweets.css'
+import { postTweetsAction } from '../../redux/tweetsReducer'
 
 const mapStateToProps = (state) => {
     return {
@@ -14,6 +14,7 @@ const AddTweetForm = ({users, tweets}) => {
     const [name, setName] = useState('')
     const [content, setContent] = useState('')
     const [image, setImage] = useState('https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+    const [posted, setPosted] = useState(false)
 
     const postTweet = e => {
         e.preventDefault()
@@ -26,9 +27,12 @@ const AddTweetForm = ({users, tweets}) => {
             image: image
         }
 
-        console.log(newTweet)
-        axios.post('https://domer.tech:9999/tweets/', newTweet)
+        postTweetsAction(newTweet)
 
+        setContent('')
+        setImage('')
+        setPosted(prev => !prev)
+        setTimeout(() => setPosted(prev => !prev), 2000)
     }
 
     return (
@@ -45,6 +49,7 @@ const AddTweetForm = ({users, tweets}) => {
                 <input type="text" value={image} onChange={e => setImage(e.target.value)}/>
             </label>
             <button type='submit'>Post Tweet</button>
+            <div>{posted ? 'Posted!' : ''}</div>
         </form>
     )
 }

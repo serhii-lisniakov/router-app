@@ -6,7 +6,7 @@ const initialState = {
 
 export const getTweetsAction = () => {
     return async dispatch => {
-        const tweets = await axios.get('https://domer.tech:9999/tweets/')
+        const tweets = await axios.get('https://cors-anywhere.herokuapp.com/http://domer.tech:9999/tweets/')
         dispatch({
             type: 'GET_TWEETS',
             payload: tweets.data.data
@@ -14,14 +14,8 @@ export const getTweetsAction = () => {
     }
 }
 
-export const postTweetsAction = (tweet) => {
-    return async (dispatch, tweet) => {
-        await axios.post('https://domer.tech:9999/tweets/', tweet)
-        dispatch({
-            type: 'POST_TWEET',
-            payload: tweet
-        })
-    }
+export const postTweetsAction = async (tweet) => {
+    await axios.post('https://cors-anywhere.herokuapp.com/http://domer.tech:9999/tweets/', tweet)
 }
 
 
@@ -34,10 +28,10 @@ export const tweetsReducer = (state = initialState, action) => {
                 tweets: action.payload
             }
         case 'POST_TWEET':
-        return {
-            ...state,
-            tweets: [...state.tweets, action.payload]
-        }
+            return {
+                ...state,
+                tweets: [...state.tweets, action.payload]
+            }
         default: return state;
     }
 }
